@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Denúncia Ambiental</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Formulário de Denúncia Ambiental</h1>
+
+<form id="denunciaForm" enctype="multipart/form-data">
+  <div>
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+  </div>
+  <div>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+  </div>
+  <div>
+    <label for="localizacao">Localização:</label><br>
+    <input type="text" id="localizacao" name="localizacao"><br>
+  </div>
+  <div>
+    <label for="descricao">Descrição da Denúncia:</label><br>
+    <textarea id="descricao" name="descricao" rows="4" required></textarea><br>
+  </div>
+  <div>
+    <label for="foto">Foto (opcional):</label><br>
+    <input type="file" id="foto" name="foto" accept="image/*"><br>
+  </div>
+  <div>
+    <input type="checkbox" id="anonima" name="anonima">
+    <label for="anonima">Enviar denúncia de forma anônima</label><br><br>
+  </div>
+  <div>
+    <button type="submit">Enviar Denúncia</button>
+  </div>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
