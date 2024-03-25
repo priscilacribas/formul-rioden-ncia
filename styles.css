@@ -1,27 +1,34 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: url('https://www.iaudit.com.br/wp-content/themes/beatz-understrap-master/img/iaudit%20imagens/Extra/canal%202.svg') no-repeat left;
-    background-size: 1000px 600px; 
+    background: url('https://img.freepik.com/fotos-gratis/gua-pura-na-natureza_53876-92989.jpg?t=st=1711235461~exp=1711239061~hmac=a6f74cd5f767d65c986f8f10401904ed0f5470e20830e5c6cc95fb8b62842cd5&w=996') no-repeat left;
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;    
+    height: 100vh;
 }
 
 .container {
     text-align: center;
-    background-color: rgba(28, 41, 73, 0.774);
+    background-color: rgba(244, 248, 244, 0.774);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Defina a largura desejada */
-    height: 600px; /* Defina a altura desejada */
-    position: fixed; /* Fixa o elemento na página */
-    top: 50%; /* Alinha o topo da caixa ao centro vertical */
-    right: 30px; /* Define a margem direita desejada */
-    transform: translateY(-50%); /* Corrige o posicionamento vertical */
+    width: 300px;
+    /* Defina a largura desejada */
+    height: 600px;
+    /* Defina a altura desejada */
+    position: fixed;
+    /* Fixa o elemento na página */
+    top: 50%;
+    /* Alinha o topo da caixa ao centro vertical */
+    right: 30px;
+    /* Define a margem direita desejada */
+    transform: translateY(-50%);
+    /* Corrige o posicionamento vertical */
+    opacity: 0.7;
 }
 
 form {
@@ -34,7 +41,8 @@ label {
     margin-top: 10px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -43,12 +51,19 @@ input, textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #3381FF;
+    background-color: #076917;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px; 
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+button:hover,
+button:focus {
+    background-color: #06c94a;
+    ; /* Cor quando o mouse está em cima do botão ou ele está focado */
 }
 
 ul {
@@ -58,106 +73,155 @@ ul {
 }
 
 li {
-    background-color: #f1f1f1;
+    background-color: #adc9b7;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
 }
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3381FF;
+    background-color: #076917;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .btn:hover {
-    background-color: #14709E;
+    background-color: #06c94a;
 }
 
 .info-box {
-    text-align: left; /* Alinhe o texto à esquerda para uma melhor leitura */
-    background-color: #f9f9f9; /* Cor de fundo mais clara */
-    padding: 20px; /* Espaçamento interno */
+    text-align: left;
+    /* Alinhe o texto à esquerda para uma melhor leitura */
+    background-color: #f9f9f9;
+    /* Cor de fundo mais clara */
+    padding: 20px;
+    /* Espaçamento interno */
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(249, 249, 249);
-    margin: 20px auto; /* Margem para centralizar na página */
-    max-width: 600px; /* Largura máxima da caixa */
+    margin: 20px auto;
+    /* Margem para centralizar na página */
+    max-width: 600px;
+    /* Largura máxima da caixa */
 }
 
 .info-box h3 {
-    color: #f5eeee; /* Cor do título */
-    font-size: 24px; /* Tamanho do título */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    color: #f5eeee;
+    /* Cor do título */
+    font-size: 24px;
+    /* Tamanho do título */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do título */
 }
 
 .info-box ul {
-    list-style: none; /* Remover marcadores de lista */
-    padding: 0; /* Remover espaçamento interno da lista */
-    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+    list-style: none;
+    /* Remover marcadores de lista */
+    padding: 0;
+    /* Remover espaçamento interno da lista */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo da lista */
 }
 
 .info-box ul li {
-    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    margin-bottom: 10px;
+    /* Espaçamento entre os itens da lista */
 }
 
 .info-box ul li img {
-    width: 24px; /* Tamanho dos ícones */
+    width: 24px;
+    /* Tamanho dos ícones */
     height: 24px;
-    margin-right: 10px; /* Espaçamento à direita dos ícones */
+    margin-right: 10px;
+    /* Espaçamento à direita dos ícones */
 }
 
 .info-box p {
-    margin-bottom: 10px; /* Espaçamento abaixo dos parágrafos */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo dos parágrafos */
 }
 
 .pagina-eletronica {
-        color: #ffffff; /* Define uma cor cinza para o texto */
+    color: #ffffff;
+    /* Define uma cor cinza para o texto */
 }
+
 h4 ul li {
-    color: #e61212; /* Define a cor do texto dentro das caixas para preto */
+    color: #220565;
+    /* Define a cor do texto dentro das caixas para preto */
 }
+
 h4 {
-    color: #ffffff; /* Define a cor do texto dentro do elemento h4 */
+    color: #023C0B;
+    /* Define a cor do texto dentro do elemento h4 */
 }
+
+h2{
+    color: #023C0B;
+    /* Define a cor do texto dentro do elemento h4 */
+}
+
 h1 {
-    font-size: 30px; /* Ajuste o tamanho da fonte conforme desejado */
-    font-family: 'Arial', sans-serif; /* Escolha uma fonte que seja chamativa e legível */
-    color: #faf9f9; /* Escolha uma cor de texto que contraste bem com o fundo */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.813); /* Adicione uma sombra ao texto para destacá-lo */
-    margin-bottom: 20px; /* Adicione um espaçamento abaixo do título */
+    font-size: 30px;
+    /* Ajuste o tamanho da fonte conforme desejado */
+    font-family: 'Arial', sans-serif;
+    /* Escolha uma fonte que seja chamativa e legível */
+    color: #023C0B;
+    /* Escolha uma cor de texto que contraste bem com o fundo */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.813);
+    /* Adicione uma sombra ao texto para destacá-lo */
+    margin-bottom: 20px;
+    /* Adicione um espaçamento abaixo do título */
 }
+
 .confirm-box {
-    background-color: #f9f9f9; /* Cor de fundo da caixa */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 0 10px rgba(249, 247, 247, 0.1); /* Sombra */
-    margin: 20px auto; /* Margem para centralizar na página */
-    max-width: 600px; /* Largura máxima da caixa */
+    background-color: #f9f9f9;
+    /* Cor de fundo da caixa */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(249, 247, 247, 0.1);
+    /* Sombra */
+    margin: 20px auto;
+    /* Margem para centralizar na página */
+    max-width: 600px;
+    /* Largura máxima da caixa */
     text-align: left;
 }
 
 .confirm-box p {
-    margin-bottom: 10px; /* Espaçamento abaixo dos parágrafos */
-    line-height: 1.6; /* Espaçamento entre as linhas */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo dos parágrafos */
+    line-height: 1.6;
+    /* Espaçamento entre as linhas */
 }
 
 .btn {
-    display: block; /* Mostrar o link como um bloco */
-    margin-bottom: 20px; /* Adicionar espaço abaixo do link */
+    display: block;
+    /* Mostrar o link como um bloco */
+    margin-bottom: 20px;
+    /* Adicionar espaço abaixo do link */
 }
+
 .confirm-box {
     background-color: #f9f9f9;
     padding: 4.4px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Adiciona um espaçamento superior */
-    max-width: 600px; /* Define a largura máxima */
-    margin-left: auto; /* Centraliza horizontalmente */
+    margin-top: 20px;
+    /* Adiciona um espaçamento superior */
+    max-width: 600px;
+    /* Define a largura máxima */
+    margin-left: auto;
+    /* Centraliza horizontalmente */
     margin-right: auto;
-    text-align: left; /* Alinha o texto justificado */
+    text-align: left;
+    /* Alinha o texto justificado */
     font-size: 14px;
 }
